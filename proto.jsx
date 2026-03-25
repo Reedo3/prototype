@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+const { useState, useEffect } = React;
 
 const CLASSES = [
   { id: 1, name: "No-Gi", coach: "Coach Dave", time: "12:00 PM", status: "live", focus: "Arm Drags & 2-on-1", enrolled: 18, capacity: 24 },
@@ -248,7 +248,7 @@ function TimelineDot({ active }) {
   );
 }
 
-export default function GymFeed() {
+function GymFeed() {
   const [tab, setTab] = useState("schedule");
   const [expanded, setExpanded] = useState(null);
   const [alertDismissed, setAlertDismissed] = useState(false);
